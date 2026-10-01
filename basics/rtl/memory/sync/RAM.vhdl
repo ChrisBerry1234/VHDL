@@ -14,7 +14,7 @@ entity rw_4x4_sync is
     clock    : in std_logic; 
     address  : in std_logic_vector(integer(ceil(log2(real(DEPTH))))-1 downto 0);
     data_out : out std_logic_vector(WIDTH-1 downto 0);
-    data_in  : out std_logic_vector(WIDTH-1 downto 0);
+    data_in  : in std_logic_vector(WIDTH-1 downto 0);
     WE       : in std_logic);
 
 end entity; 
