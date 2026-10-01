@@ -35,6 +35,7 @@ architecture rw_4x4_sync_arch of rw_4x4_sync is
           else 
             data_out <= RW(to_integer(unsigned(address)));
           end if;
-        end if; 
+        end if;
+      end process MEMORY;
 
 end architecture; 
